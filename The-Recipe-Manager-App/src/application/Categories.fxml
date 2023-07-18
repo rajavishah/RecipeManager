@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="box" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="920.0" style="-fx-border-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CategoriesCardController">
+   <children>
+      <HBox prefHeight="317.0" prefWidth="920.0" style="-fx-border-color: #DCEDF2;">
+         <children>
+            <ImageView fx:id="recipeImage" fitHeight="240.0" fitWidth="361.0">
+               <image>
+                  <Image url="@../../assets/grilled_ch.jpeg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <HBox prefHeight="320.0" prefWidth="251.0">
+               <children>
+                  <VBox prefHeight="317.0" prefWidth="173.0">
+                     <children>
+                        <Label fx:id="recipeName" alignment="TOP_LEFT" prefHeight="86.0" prefWidth="142.0" text="Chicken&#10;&#10;Parmesean&#10;">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="recipeChef" alignment="TOP_LEFT" prefHeight="71.0" prefWidth="150.0" text="Chef Name">
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="10.0" right="10.0" top="30.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="recipeTime" alignment="TOP_LEFT" prefHeight="59.0" prefWidth="148.0" text="prepTime">
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="10.0" right="10.0" top="30.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="47.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../assets/hourglass.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox prefHeight="317.0" prefWidth="467.0">
+               <children>
+                  <Label fx:id="recipeDescription" alignment="TOP_LEFT" prefHeight="99.0" prefWidth="358.0" text="Description&#10;&#10;&#10;Just&#10;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="recipeContents" alignment="TOP_LEFT" prefHeight="148.0" prefWidth="360.0" text="Ingredients&#10;&#10;New lines here&#10;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

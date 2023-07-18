@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MealPlanController">
+   <children>
+      <HBox layoutX="-2.0" layoutY="-4.0" prefHeight="82.0" prefWidth="941.0" style="-fx-background-color: #DCEDF2;">
+         <children>
+            <ImageView fitHeight="63.0" fitWidth="52.0">
+               <image>
+                  <Image url="@../../assets/logo1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <RadioButton fx:id="lowCarbButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="155.0" text="Low Carb Meal Plan">
+               <HBox.margin>
+                  <Insets right="20.0" top="35.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="ketoButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Keto Meal Plan">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="20.0" top="35.0" />
+               </HBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="WeightLossButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Weight loss Meal Plan">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="20.0" top="35.0" />
+               </HBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="CustomMealBtn" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Custom Meal Plan">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="35.0" />
+               </HBox.margin>
+            </RadioButton>
+            <Button fx:id="create" mnemonicParsing="false" onAction="#createBtnAction" prefHeight="32.0" prefWidth="149.0" style="-fx-background-color: #FFFFFF;" text="Create Meal Plan">
+               <HBox.margin>
+                  <Insets left="10.0" right="-150.0" top="30.0" />
+               </HBox.margin>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.135755255818367" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backBtnAction" prefHeight="35.0" prefWidth="104.0" style="-fx-background-color: #FFFFFF;" text="Back">
+               <HBox.margin>
+                  <Insets left="210.0" right="10.0" top="25.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.300191193819046" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+      </HBox>
+      <ScrollPane layoutX="8.0" layoutY="111.0" prefHeight="570.0" prefWidth="921.0">
+         <content>
+            <VBox fx:id="displayLayout" prefHeight="378.0" prefWidth="920.0" spacing="10.0" style="-fx-border-color: #DCEDF2; -fx-background-color: #FFFFFF;">
+               <children>
+                  <Separator prefWidth="200.0" />
+               </children>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.6214148998260498" />
+                     </color>
+                  </DropShadow>
+               </effect></VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

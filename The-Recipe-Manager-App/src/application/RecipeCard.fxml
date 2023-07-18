@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="762.0" prefWidth="914.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RecipeCardController">
+   <children>
+      <Button fx:id="backbtn" layoutX="406.0" layoutY="632.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="46.0" prefWidth="160.0" style="-fx-background-radius: 50Px; -fx-background-color: #ffffff; -fx-border-color: BLACK; -fx-border-radius: 50Px;" text="Back">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+         </padding>
+      </Button>
+      <Label layoutX="335.0" layoutY="88.0" text="Food Recipe Manager">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="414.0" layoutY="138.0" text="Recipe Details">
+         <font>
+            <Font name="Comic Sans MS Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="89.0" fitWidth="88.0" layoutX="448.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/logo1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="DetailrecipeImage" fitHeight="318.0" fitWidth="350.0" layoutX="81.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="454.0" layoutY="237.0" text="Recipe Name">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="recipeNameDetailTo" layoutX="572.0" layoutY="238.0" prefHeight="17.0" prefWidth="150.0" text="Label" />
+      <Label layoutX="470.0" layoutY="287.0" text="Recipe chef">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="chefNameDetail" layoutX="572.0" layoutY="274.0" prefHeight="44.0" prefWidth="150.0" text="Label" />
+      <Label layoutX="449.0" layoutY="384.0" text="Recipe Instructions">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="451.0" layoutY="520.0" text="Recipe Ingredients">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="564.0" text="Recipe Rating">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="recipeRatingDetail" fitHeight="44.0" fitWidth="230.0" layoutX="193.0" layoutY="559.0" pickOnBounds="true" preserveRatio="true" />
+      <ScrollPane layoutX="593.0" layoutY="335.0" prefHeight="151.0" prefWidth="312.0">
+         <content>
+            <Label fx:id="recipeDescriptionDetail" prefHeight="137.0" prefWidth="322.0" text="Label" />
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="592.0" layoutY="495.0" prefHeight="121.0" prefWidth="310.0">
+         <content>
+            <Label fx:id="recipeContentsDetail" prefHeight="120.0" prefWidth="305.0" text="Label" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

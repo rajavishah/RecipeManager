@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="689.0" prefWidth="937.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SavedRecipesController">
+   <center>
+      <AnchorPane prefWidth="950.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="56.0" prefWidth="950.0" style="-fx-background-color: #DCEDF2;">
+               <children>
+                  <ImageView fitHeight="54.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                  	<image>
+                        <Image url="@../../assets/logo1.png" />
+                     	</image>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label text="Food Recipe Manager">
+                     <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Label layoutX="421.0" layoutY="56.0" text="Favorites" textFill="#004153">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="24.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutY="95.0" prefHeight="539.0" prefWidth="949.0">
+               <content>
+                  <VBox fx:id="saveCardLayout" prefHeight="537.0" prefWidth="934.0" spacing="10.0" style="-fx-background-color: #FFFFFF;" />
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <Button fx:id="backBtn" mnemonicParsing="false" onAction="#handleBackBtn" prefHeight="46.0" prefWidth="160.0" style="-fx-background-radius: 50Px; -fx-background-color: #ffffff; -fx-border-color: BLACK; -fx-border-radius: 50Px;" text="Back" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+         </padding>
+      </Button>
+   </bottom>
+</BorderPane>

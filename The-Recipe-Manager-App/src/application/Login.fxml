@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="689.0" prefWidth="937.0" style="-fx-background-color: rgba(173, 216, 230, 0.1); -fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#edeff003" height="284.0" layoutX="529.0" layoutY="190.0" stroke="BLACK" strokeType="INSIDE" width="282.0" />
+      <Text layoutX="622.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Back!">
+         <font>
+            <Font name="System Italic" size="27.0" />
+         </font>
+      </Text>
+      <TextField fx:id="usernameLogin" layoutX="637.0" layoutY="258.0" promptText="John" style="-fx-background-color: #bfebec;" />
+      <TextField fx:id="emailLogin" layoutX="637.0" layoutY="299.0" promptText="john.adams@gmail.com" style="-fx-background-color: #bfebec;" />
+      <Text layoutX="555.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="584.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="565.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+       <PasswordField fx:id="passwordLogin" layoutX="637.0" layoutY="337.0" />
+      <Text layoutX="637.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot Password?" />
+      <Button fx:id="forgotPasswordLogin" contentDisplay="CENTER" graphicTextGap="2.0" layoutX="737.0" layoutY="370.0" mnemonicParsing="false" onAction="#forgotPasswordLogin" prefHeight="17.0" prefWidth="49.0" style="-fx-background-color: transparent; -fx-border-color: gray; -fx-border-radius: 10px;" text="Click Here" textAlignment="CENTER" textOverrun="CLIP">
+        <font>
+            <Font size="8.0" />
+         </font>
+      </Button>
+      <CubicCurve controlX1="-81.56201934814453" controlX2="127.1839828491211" controlY1="29.371543884277344" controlY2="-16.030759811401367" endX="178.68409729003906" endY="226.01206970214844" fill="#d3d7db03" layoutX="304.0" layoutY="247.0" rotate="45.0" startX="-215.0736083984375" startY="151.63255310058594" stroke="BLACK" strokeLineCap="ROUND" strokeMiterLimit="5.0" />
+      <Button fx:id="loginButton" layoutX="661.0" layoutY="394.0" mnemonicParsing="false" onAction="#LoginPageBtAction" prefHeight="32.0" prefWidth="98.0" style="-fx-background-color: white; -fx-border-color: white; -fx-border-radius: 20px; -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 2);" text="Login">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="backLogin" layoutX="662.0" layoutY="433.0" mnemonicParsing="false" onAction="#BackBtnAction" prefHeight="32.0" prefWidth="98.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 10, 0, 0, 2); -fx-background-color: white; -fx-border-radius: 20px;" text="Back" />
+      <ImageView fitHeight="93.0" fitWidth="67.0" layoutX="70.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/login2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="41.0" layoutX="568.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/logo1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="138.0" fitWidth="125.0" layoutX="42.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/login4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="144.0" fitWidth="186.0" layoutX="269.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/login5.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="179.0" layoutX="241.0" layoutY="534.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/login6.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="LoginMessageLabel" layoutX="663.0" layoutY="238.0" prefHeight="17.0" prefWidth="94.0" />
+
+   </children>
+</AnchorPane>

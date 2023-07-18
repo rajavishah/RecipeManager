@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox prefHeight="217.0" prefWidth="934.0" spacing="10.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #DCEDF2; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SaveCardController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <ImageView fx:id="saveRecipeImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="saveRatingImage" fitHeight="46.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <VBox prefWidth="720.0">
+         <children>
+            <Label fx:id="SaveRecipeName" prefHeight="17.0" prefWidth="128.0" text="Recipe Name">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin></Label>
+            <Label fx:id="savechefName" prefHeight="17.0" prefWidth="128.0" text="Chef Name">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin></Label>
+            <Label fx:id="recipeDescription" alignment="TOP_LEFT" prefHeight="98.0" prefWidth="686.0" text="Recipe Description">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin></Label>
+            <Label fx:id="recipeContents" alignment="TOP_LEFT" prefHeight="50.0" prefWidth="720.0" text="Recipe Contents">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin></Label>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" top="10.0" />
+   </padding>
+</HBox>

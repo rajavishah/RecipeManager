@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="689.0" prefWidth="937.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <top>
+
+      <HBox prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: #DCEDF2;" BorderPane.alignment="CENTER">
+
+         <children>
+            <ImageView fitHeight="57.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/logo1.png" />
+               </image>
+            </ImageView>
+            <Label maxHeight="-Infinity" text="My Recipe App Manager" textAlignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="200.0" />
+            <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="290.0">
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="10.0" top="15.0" />
+               </HBox.margin>
+               <children>
+                  <ImageView fitHeight="38.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="260.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../../assets/search_icon.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="searchField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleSearchButtonAction" prefHeight="25.0" prefWidth="275.0" promptText="Search">
+                     <HBox.margin>
+                        <Insets left="-260.0" top="8.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0">
+               <HBox.margin>
+                  <Insets left="30.0" right="10.0" />
+               </HBox.margin>
+            </Separator>
+            <Hyperlink fx:id="savedRecipe" onAction="#handleSavedRecipesClick" text="Saved Recipes">
+               <HBox.margin>
+                  <Insets right="10.0" top="23.0" />
+               </HBox.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="myProfile" onAction="#handlemyProfileClick" text="MyProfile">
+               <HBox.margin>
+                  <Insets right="10.0" top="23.0" />
+               </HBox.margin>
+            </Hyperlink>
+
+            <Hyperlink fx:id="mealPlan" onAction="#handleMealPlanClick" text="Meal Plan">
+
+               <HBox.margin>
+                  <Insets right="10.0" top="23.0" />
+               </HBox.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="Logout" onAction="#handleLogoutClick" text="Logout">
+               <HBox.margin>
+                  <Insets right="10.0" top="23.0" />
+               </HBox.margin>
+            </Hyperlink>
+         </children>
+      </HBox>
+   </top>
+   <center>
+
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+
+         <children>
+            <Label text="Discover Recipes">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+
+            <ScrollPane prefHeight="258.0" prefWidth="938.0">
+               <content>
+
+
+                  <HBox fx:id="cardLayout" prefHeight="228.0" prefWidth="934.0" spacing="10.0" style="-fx-background-color: #FFFFFF;" />
+
+               </content>
+            </ScrollPane>
+            <Label prefHeight="47.0" prefWidth="127.0" text="Categories">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font></Label>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #DCEDF2;">
+               <children>
+                  <Button fx:id="breakfastBtn" mnemonicParsing="false" onAction="#handleBreakfastClick" prefHeight="152.0" prefWidth="132.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;" text="Breakfast">
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/breakfast_logo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="50.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="dinnerBtn" mnemonicParsing="false" onAction="#handleDinnerClick" prefHeight="152.0" prefWidth="132.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;" text="Dinner">
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/Dinner_logo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="50.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="starterBtn" mnemonicParsing="false" onAction="#handleAppetizerClick" prefHeight="152.0" prefWidth="132.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;" text="Appetizer">
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/appetizer_logo.jpeg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="50.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="lunchBtn" mnemonicParsing="false" onAction="#handleLunchClick" prefHeight="152.0" prefWidth="132.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;" text="Lunch">
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/Lunch_logo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <ScrollPane prefHeight="231.0" prefWidth="937.0" BorderPane.alignment="CENTER">
+         <content>
+            <HBox fx:id="cardAreaLayout" prefHeight="245.0" prefWidth="926.0" style="-fx-background-color: #FFFFFF;" />
+         </content>
+      </ScrollPane>
+   </bottom>
+
+</BorderPane>
